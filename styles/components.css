@@ -1,0 +1,37 @@
+#aniosDeCursos{
+    display: grid;
+    background-color: #C2EAEB;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 0 2%;
+}
+.tituloAnio{
+    grid-column: 1 / -1;
+    text-align:left;
+    margin-left: 7%;
+}
+.anio{
+
+    display: grid;
+    background-color: #96CFEB;
+    margin-bottom: 10%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10%;
+    padding: 0 5%;
+    padding-bottom: 5%;
+    justify-content: space-around;
+    overflow: auto;
+    border-radius: 1%;
+}
+.cajaCurso{
+    width: 12vw;
+    height: 7vh;
+    display: block;
+    background-color: #A6EB98;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.nombreCurso{
+    text-align:center;
+}
