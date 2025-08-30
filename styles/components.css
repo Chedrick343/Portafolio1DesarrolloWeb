@@ -1,20 +1,37 @@
+#seccionIntroductoria{
+
+}
+
+#textoBienvenida{
+    color: rgb(0, 0, 0);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    text-align: justify;
+    font-size: 110%;
+}
+
 #aniosDeCursos{
     display: grid;
-    background-color: #C2EAEB;
+    background-color: #205f61; 
     margin-right: 15%;
     margin-left: 15%;
     padding: 0 2%;
+    box-shadow: 0 3px 20px rgba(8, 6, 6, 0.329);
+    border-radius: 1%;
 }
 .tituloAnio{
+    color: white;
     grid-column: 1 / -1;
     text-align:left;
     margin-left: 7%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .anio{
 
     display: grid;
-    background-color: #96CFEB;
-    margin-bottom: 10%;
+    background-color: #011627;
+    margin-bottom: 7%;
     grid-template-columns: repeat(3,1fr);
     gap: 10%;
     padding: 0 5%;
@@ -22,14 +39,37 @@
     justify-content: space-around;
     overflow: auto;
     border-radius: 1%;
+    box-shadow: 0 3px 16px rgba(8, 6, 6, 0.329);;
 }
+.anio::-webkit-scrollbar{
+    width: 10px;
+}
+.anio::-webkit-scrollbar-track{
+    background: #6facb1;
+}
+.anio::-webkit-scrollbar-thumb {
+    background-color: #66bb6a; 
+    border-radius: 10px;
+    border: 3px solid #e0f5e9; 
+}
+.anio::-webkit-scrollbar-thumb:hover {
+    background-color: #388e3c;
+}
+
 .cajaCurso{
     width: 12vw;
     height: 7vh;
     display: block;
-    background-color: #A6EB98;
+    background-color: #6facb1;
     padding: 20px;
     border-radius: 5%;
+    box-shadow: 0 3px 16px rgba(73, 134, 192, 0.644);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cajaCurso:hover{
+    transform: translate(-5px);
+    box-shadow: 0 8px 16px rgba(92, 238, 56, 0.863);
+
 }
 
 .nombreCurso{
